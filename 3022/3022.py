@@ -15,6 +15,7 @@ def main():
         celsuis = (tem - 32) * 5 / 9
     elif text_1 == 'R':
         celsuis = (tem * 5 / 9 )  - 273.15
+
     ans = 0.0
     if text_2 == 'C':
         ans  = celsuis
