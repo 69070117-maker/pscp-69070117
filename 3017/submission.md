@@ -15,14 +15,14 @@
 หมายเลข/ชื่อโจทย์ OJ:
 
 ```text
-3017
+561767
 
 ```
 
 OJ submission ID ถ้ามีการส่งแล้ว:
 
 ```text
-544805
+https://ijudge.it.kmitl.ac.th/submissions/561767/overview
 
 ```
 
