@@ -1,19 +1,24 @@
-"""pass or fail"""
+"""Pass or Fail """
 def main():
-    """3166"""
-    num = int(input())
-    score = []
-    sumscore = 0
-    average = 0
-    for _ in range(num):
-        score_input = int(input())
-        score.append(score_input)
-    for i  in score:
-        sumscore += i
-    average = sumscore / num
-    print(average)
-    if average >= 50 :
+    """main"""
+    n = int(input())
+    scores = []
+    all_passed = True
+
+    for _ in range(n):
+        score = int(input())
+        scores.append(score)
+        if score < 50:
+            all_passed = False
+
+    average = sum(scores) / n
+
+    print(f"{average:.1f}")
+
+    if all_passed and average >= 60.0:
         print("PASS")
     else:
         print("FAIL")
+
+
 main()

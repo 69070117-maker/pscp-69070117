@@ -1,5 +1,4 @@
 """sahakorn"""
-from decimal import Decimal, ROUND_HALF_UP
 def main():
     """3111"""
     member = input()
@@ -12,6 +11,7 @@ def main():
         total = total * 95 / 100
     elif member == "N" and total >= 500:
         total = total * 0.97
-    ans = Decimal(str(total)).quantize(Decimal('0.01'), rounding=ROUND_HALF_UP)
+    ans = round(total, 2
+                )
     print(ans)
 main()

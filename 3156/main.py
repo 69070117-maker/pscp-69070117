@@ -3,11 +3,14 @@ def main():
     """3156"""
     text = input()
     num = int(input())
-    char = "abcdefghijklmnopqrstuvwxyz"
+    alphabet = "abcdefghijklmnopqrstuvwxyz"
     result = ""
-    for text in char:
-        idx = text.index(char)
-        newidx = (idx + num) % 26
-        result += char[newidx]
+    for i in text:
+        if i in alphabet:
+            idx = alphabet.index(i)
+            newidx = (idx + num) % 26
+            result += alphabet[newidx]
+        else:
+            result += i
     print(result)
 main()
